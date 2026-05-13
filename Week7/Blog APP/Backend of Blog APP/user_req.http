@@ -1,0 +1,16 @@
+GET  http://localhost:5000/auth/logout 
+
+###
+
+GET http://localhost:5000/user-api/articles
+
+###Add comment by user to an article
+
+PUT http://localhost:5000/user-api/articles
+Content-Type: application/json
+
+{
+    "articleId":"69ccb3a9cfb1b13c6c44f61a",
+    "comment":"BlockBuster movie"
+}
+

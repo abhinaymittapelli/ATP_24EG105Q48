@@ -1,0 +1,31 @@
+
+POST http://localhost:5000/author-api/article
+Content-Type: application/json
+
+{
+    "author":"69ccb200cfb1b13c6c44f611",
+    "title":"Salaar",
+    "category":"Action",
+    "content":"It is Thriller"
+}
+
+
+###
+
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    "email":"Deva@gmail",
+    "password":"deva"
+}
+
+
+###
+GET  http://localhost:5000/auth/logout
+
+
+
+###Delete article by Ari
+
+GET  http://localhost:5000/author-api/articles

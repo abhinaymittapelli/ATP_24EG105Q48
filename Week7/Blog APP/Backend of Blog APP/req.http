@@ -1,0 +1,36 @@
+### Register User
+POST http://localhost:5000/auth/users
+Content-Type: application/json 
+
+{
+    "firstName":"Abhi",
+    "lastName":"mittu",
+    "email":"Abhi@gmail",
+    "password":"abhi",
+    "role":"USER",
+    "profileImageUrl":"http://example.com/avatars/use/"
+}
+
+###
+
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    "email":"Deva@gmail",
+    "password":"deva"
+}
+
+###
+
+GET  http://localhost:5000/auth/logout 
+
+
+###Change password
+PUT http://localhost:5000/auth/password
+Content-Type: application/json
+
+{
+    "password":"abhi",
+    "newpassword":"abhinay"
+}
