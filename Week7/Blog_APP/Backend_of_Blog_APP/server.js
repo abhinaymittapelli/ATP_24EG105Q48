@@ -11,6 +11,7 @@ import cors from 'cors';
 
 config()
 //create express app
+const app = exp();
 app.use(cors({
   origin: [
     "https://atp-24-eg-105-q48-qc5u.vercel.app"
@@ -37,7 +38,7 @@ app.use("/auth",commonApp)
         await connect(process.env.DB_URL)
         console.log("DB connected")
         //assign port
-        const port=process.env.port || 5000
+        const port=process.env.PORT || 5000
         app.listen(port,()=>console.log(`server listening on ${port}..`))
     }
     catch(err)
