@@ -36,6 +36,3 @@ console.log(employees)
 employees.splice(3,1,{eno:103,name:'Sneha',marks:[88,92,75]})
 console.log(employees) 
 
-//1. Insert new Emp at 2nd position
-//2. Remove an emp with name "Kiran"
-//3.Change the last mark 95 to 75 of emp  "Sneha"

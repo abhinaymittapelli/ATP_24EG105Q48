@@ -3,7 +3,7 @@ import { EmployeeModel } from "../Models/EmployeeModel.js"
 export const employeeApp=exp.Router()
 
 
-
+//insert new employee
 employeeApp.post('/employee',async(req,res)=>{
     const newEmployee=req.body;
     const newEmployeeDocument=new EmployeeModel(newEmployee);

@@ -15,15 +15,24 @@ Tasks:
 */
 
 let temparature=[32, 35, 28, 40, 38, 30, 42]
+//filter temperature greater than 35
+
 const t=temparature.filter(temp=>temp>35)
 console.log("Above 35 ",t)
+
+//Converting celsius to Fahrenheit
 const f=temparature.map((temp)=>((temp*9)/5+32))
 console.log("After Converting Celsius to Fahrenheit ",f)
 
+
+//Average Temperature
 const avg=temparature.reduce((acc,temp)=>acc+temp)/temparature.length
 console.log(avg)
 
+//first Temparature greater than 40
 const r=temparature.find(temp=>temp>40)
 console.log(r)
+
+//Index of 28
 const r2=temparature.findIndex((temp)=>temp==28)
 console.log(r2)

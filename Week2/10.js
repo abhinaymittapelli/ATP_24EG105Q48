@@ -17,12 +17,20 @@ Tasks:
     5. findIndex() of "node"
     */
 const courses = ["javascript", "react", "node", "mongodb", "express"];
+
+//Courses whose length greater than 5
 let r=courses.filter((element)=>element.length>5)
 console.log(r)
+
+//Courses convert toUpperCase
 let u=courses.map((element)=>element.toUpperCase())
 console.log(u)
+
+//Split it into single string
 let s=courses.reduce((acc,course)=>acc.toUpperCase()+"|"+course.toLowerCase())
 console.log(s)
+
+//Finding course and index of course
 let f=courses.find((course)=>course=="react")
 console.log(f)
 let i=courses.findIndex((course)=>course=="node")
