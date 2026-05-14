@@ -15,7 +15,7 @@ const app=exp()
 
 app.use(cors(
     {
-        origin:"https://blog-backend-qsi6.onrender.com",
+        origin:"https://atp-24-eg-105-q48-qc5u.vercel.app",
         credentials:true,
 
     }
