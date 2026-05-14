@@ -19,7 +19,7 @@ function ListofEmps() {
 
   //delete employee
   const deleteEmpById=async (id)=>{
-    let res=await axios.delete(`${API}/employee/${id}`)
+    let res=await axios.delete(`${API}/employee-api/employee/${id}`)
     if(res.status==200){
       //get employees
       getEmps();
