@@ -12,14 +12,14 @@ import cors from 'cors';
 config()
 //create express app
 const app=exp()
+app.use(cors({
+    origin: "https://atp-24-eg-105-q48-qc5u.vercel.app",
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"]
+}));
 
-app.use(cors(
-    {
-        origin:"https://atp-24-eg-105-q48-qc5u.vercel.app",
-        credentials:true,
 
-    }
-))
 //cookie parser
 app.use(cookieParser())
 //body parser middle ware
