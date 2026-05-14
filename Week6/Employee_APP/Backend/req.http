@@ -1,0 +1,32 @@
+GET http://localhost:5000/employee-api/employees
+
+
+
+### Create a new user
+POST http://localhost:5000/employee-api/employees
+Content-Type: application/json
+
+{
+    "Emp_Name":"Ashrith",
+    "Emp_email":"ashu@1234",
+    "Emp_Mobno":9121945500,
+    "Designation":"HR",
+    "CompanyName":"tcs"
+}
+
+###
+
+PUT http://localhost:5000/employee-api/employees/69cab224fcdf479c671e7bc6
+Content-Type: application/json
+
+{
+    "Emp_Name":"Abhi",
+    "Emp_email":"abhi@1234",
+    "Emp_Mobno":9121945500,
+    "Designation":"fresher",
+    "CompanyName":"microsoft"
+}
+
+
+### Delete emp by id
+DELETE http://localhost:4000/emp-api/employees/69ca2914876d014c00a49b6e
