@@ -2,7 +2,7 @@ import { useState,useEffect } from "react"
 import { useNavigate } from "react-router";
 import axios from "axios";
 const API=import.meta.env.VITE_API_URL
-function ListOfEmps() {
+function ListofEmps() {
 
   const [emps,setEmps]=useState([]);
   const navigate=useNavigate();
@@ -89,4 +89,4 @@ function ListOfEmps() {
   )
 }
 
-export default ListOfEmps
+export default ListofEmps
