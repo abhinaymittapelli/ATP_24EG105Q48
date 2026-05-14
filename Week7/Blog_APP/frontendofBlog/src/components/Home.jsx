@@ -20,17 +20,17 @@ function Home() {
       <div className="max-w-4xl mx-auto px-6 pt-24 pb-20 text-center">
         
         <h1 className="text-5xl sm:text-6xl font-black text-slate-900 tracking-tight leading-tight mb-6">
-          Imaginations To RealTimes  <br />
+         Write Beyond Limits  <br />
          
         </h1>
         <p className="text-lg text-slate-500 max-w-xl mx-auto mb-10 leading-relaxed">
-          Read Your passionate stories and enjoy...
+          Discover meaningful stories and enjoy reading...
         </p>
         <div className="flex items-center justify-center gap-4">
           {isAuthenticated ? (
             <NavLink
               to={getProfilePath()}
-              className="bg-indigo-600 text-white font-bold px-8 py-3.5 rounded-full hover:bg-indigo-700 transition text-sm shadow-lg shadow-indigo-200"
+              className="bg-blue-600 text-white font-bold px-8 py-3.5 rounded-full hover:bg-indigo-700 transition text-sm shadow-lg shadow-indigo-200"
             >
               Go to Dashboard →
             </NavLink>
@@ -59,7 +59,7 @@ function Home() {
           {[
             { icon: "📖", title: "Read Articles", desc: "Browse curated articles across technology, programming, AI, and more." },
             { icon: "💬", title: "Join Discussions", desc: "Comment on articles and engage with authors and the community." },
-            { icon: "❤️", title: "Like & Support", desc: "Show appreciation by liking articles from your favorite authors." },
+            { icon: "❤️", title: "Like & Support", desc: "Appreciate great content with a simple like" },
           ].map((f) => (
             <div key={f.title} className="bg-white rounded-2xl p-7 border border-slate-100 shadow-sm hover:shadow-md transition">
               <div className="text-3xl mb-3">{f.icon}</div>
