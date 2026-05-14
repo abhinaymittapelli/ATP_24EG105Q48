@@ -2,7 +2,7 @@ import { createBrowserRouter,RouterProvider } from 'react-router'
 import RootLayout from './components/RootLayout'
 import Home from './components/Home'
 import CreateEmp from './components/CreateEmp'
-import ListOfEmps from './components/ListofEmps'
+import ListofEmps from './components/ListofEmps'
 import Employee from './components/Employee'
 import EditEmp from './components/EditEmp'
 

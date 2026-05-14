@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form"
-import { useLocation,useNavigate } from "react-router";
+import { useLocation,useNavigate } from "react-router-dom";
 import axios from "axios"
 const API=import.meta.env.VITE_API_URL
 
