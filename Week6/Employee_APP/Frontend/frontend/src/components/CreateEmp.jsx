@@ -1,7 +1,7 @@
 import {useForm} from "react-hook-form"
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
-
+const API=import.meta.env.VITE_API_URL
 function CreateEmp() {
 
     const [loading,setLoading]=useState(false);
@@ -15,7 +15,7 @@ function CreateEmp() {
         try{
             setLoading(true);
             //make HTTP post req
-            let res=await fetch("http://localhost:5000/employee-api/employee",
+            let res=await fetch(`${API}/employee-api/employee`,
                 {
                     method:"POST",
                     headers:{"Content-Type":"application/json"},

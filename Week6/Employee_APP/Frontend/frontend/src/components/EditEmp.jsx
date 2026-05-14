@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form"
 import { useLocation,useNavigate } from "react-router";
 import axios from "axios"
+const API=import.meta.env.VITE_API_URL
 
 function EditEmp() {
 
@@ -28,7 +29,7 @@ function EditEmp() {
   //save modified employee
   const saveModifiedEmp=async(modifiedEmp)=>{
     //make HTTP PUT req
-    const res=await axios.put(`http://localhost:5000/employee-api/employee/${state._id}`,modifiedEmp)
+    const res=await axios.put(`${API}/employee-api/employee/${state._id}`,modifiedEmp)
     if(res.status==200)
     {
       navigate("/list");

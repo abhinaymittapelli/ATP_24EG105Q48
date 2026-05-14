@@ -1,7 +1,7 @@
 import { useState,useEffect } from "react"
 import { useNavigate } from "react-router";
 import axios from "axios";
-
+const API=import.meta.env.VITE_API_URL
 function ListOfEmps() {
 
   const [emps,setEmps]=useState([]);
@@ -19,7 +19,7 @@ function ListOfEmps() {
 
   //delete employee
   const deleteEmpById=async (id)=>{
-    let res=await axios.delete(`http://localhost:5000/employee-api/employee/${id}`)
+    let res=await axios.delete(`${API}/employee/${id}`)
     if(res.status==200){
       //get employees
       getEmps();
@@ -28,7 +28,7 @@ function ListOfEmps() {
 
   //get all employees
   async function getEmps() {
-      let res=await axios.get("http://localhost:5000/employee-api/employee");
+      let res=await axios.get(`${API}/employee-api/employee`);
       if(res.status==200){
         let resObj=await res.data;
         setEmps(resObj.payload);
