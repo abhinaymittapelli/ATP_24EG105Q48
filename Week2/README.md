@@ -1,26 +1,58 @@
-# Week 2 - JavaScript Functions, APIs, and Task Management
+# Week 2 - JavaScript Functions, APIs & Task Management
 
 ## Overview
-This week focuses on JavaScript functions, array methods, APIs, and a small task management application.
+This week focuses on practicing JavaScript concepts such as array methods, APIs, object handling, cloning techniques, timers, and task management using Node.js and Express.js.
+
+The repository contains multiple real-world practice programs and a mini task management application.
+
+---
 
 ## Topics Covered
-- JavaScript array methods
-- API creation
-- Task management functionality
-- Product-related operations
+- JavaScript Functions
+- Array Methods
+- Object Manipulation
+- Spread Operator
+- Shallow Copy & Structured Clone
+- Timers (`setTimeout`, `setInterval`)
+- REST API Basics
+- Task Management Logic
+- Modular JavaScript
 
-## Main Files
-- `ProductAPI.js`
-- `TaskManagement/app.js`
-- `TaskManagement/product.js`
-- Multiple practice programs (`10.js` to `23.js`)
+---
 
-## Features
-- Filtering and mapping arrays
-- Product API handling
+## Folder Structure
+
+```bash
+Week2/
+│
+├── TaskManagement/
+│   ├── app.js
+│   ├── product.js
+│   ├── task.js
+│   └── validator.js
+│
+├── Books.js
+├── Cart.js
+├── CelsiusTOFahrenheit.js
+├── EmployeeArray.js
+├── Movies.js
+├── OnlinecourseProcessor.js
+├── ProductAPI.js
+├── SetInterval.js
+├── SetTimeout.js
+├── ShallowCopy.js
+├── SpreadOperator.js
+├── StructuredClone.js
+├── StudentsMarks.js
+├── Studentsmark.js
+├── Transactions.js
+├── UpdateUsingSpread.js
+│
+└── README.md
 - Task management logic
+---
 
-## Technologies Used
+Technologies Used
 - JavaScript
 - Node.js
 - Express.js
