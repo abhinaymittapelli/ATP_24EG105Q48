@@ -22,8 +22,7 @@ It includes authentication, blog management, APIs, and database connectivity.
 
 ## Folder Structure
 The project contains the following main files and folders:
-
-- Week7/
+Week7/
 └── Blog_APP/
     └── Backend_of_Blog_APP/
         ├── .env
@@ -82,7 +81,7 @@ The project contains the following main files and folders:
                         ├── code-points-data-browser.d.ts.map
                         ├── code-points-data-browser.js
                         ├── code-points-data-browser.js.map
-                        ├── code-points-data.d.ts
+                        └── code-points-data.d.ts
 ## Technologies Used
 - React.js
 - Node.js
